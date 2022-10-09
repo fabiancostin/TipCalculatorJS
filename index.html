@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <div class="card">
+      <div class="card-content">
+        <h3>Bill</h3>
+        <input type="number" placeholder="RON" step="0.1" min="1" id="bill" />
+        <h3>Number Of People</h3>
+        <input type="number" step="1" id="people-no" />
+        <h3>Select Tip</h3>
+        <div class="tip-btns">
+          <button type="button" class="btn1">10%</button>
+          <button type="button" class="btn2">15%</button>
+          <button type="button" class="btn3">20%</button>
+        </div>
+      </div>
+      <div class="card-content show">
+        <div class="tip-and-total">
+          <p>Tip / person</p>
+          <span id="total"><b id="tip">3,42</b>RON</span>
+        </div>
+        <div class="tip-and-total">
+          <p>Total</p>
+          <span id="total"><b id="total-pay">30</b>RON</span>
+        </div>
+        <button id="reset">RESET</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
